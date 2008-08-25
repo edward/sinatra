@@ -2,9 +2,16 @@ Dir[File.dirname(__FILE__) + "/../vendor/*"].each do |l|
   $:.unshift "#{File.expand_path(l)}/lib"
 end
 
-require 'rack'
+# You can bring in rack here (and skip bringing it in from rubygems) by doing
+#   cd vendor; gem unpack rack; mv rack-* rack
+# 
+# Alternatively, if you’ve cloned this repo through git, do
+#   git submodule update --init
+# 
+# require 'rack'
 
 require 'rubygems'
+require 'rack'
 require 'time'
 require 'ostruct'
 require "uri"
