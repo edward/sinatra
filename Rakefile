@@ -5,6 +5,7 @@ task :default => :test
 
 Echoe.new("sinatra") do |p|
   p.author = "Blake Mizerany"
+  p.email = "blake.mizerany@gmail.com"
   p.summary = "Classy web-development dressed in a DSL"
   p.url = "http://www.sinatrarb.com"
   p.docs_host = "sinatrarb.com:/var/www/blakemizerany.com/public/docs/"
