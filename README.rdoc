@@ -244,7 +244,7 @@ Run a proc inside the Sinatra::EventContext instance and set the body to the res
 
   throw :halt, lambda { puts 'In a proc!'; 'I just wrote to $stdout!' }
 
-Create you own to_result
+Create your own to_result
 
   class MyResultObject
     def to_result(event_context, *args)
@@ -256,7 +256,7 @@ Create you own to_result
     throw :halt, MyResultObject.new
   end
 
-Get the gist?  If you want more fun with this then checkout <tt>to_result</tt> on Array, Symbol, Fixnum, NilClass.
+Get the gist? If you want more fun with this, check out <tt>to_result</tt> with respect to Array, Symbol, Fixnum, and NilClass.
 
 = Configuration & Re-loading
 
@@ -446,6 +446,7 @@ Options are:
   -p # set the port (default is 4567)
   -e # set the environment (default is development)
   -x # turn on the mutex lock (default is off)
+  -s # choose either the "thin" or "mongrel" http server
 
 = Contribute
 
